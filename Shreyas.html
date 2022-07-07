@@ -1,26 +1,104 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>JDM Cars</title>
-  </head>
-  <body>
-    <h1>What is a JDM car?</h1>
-    <h3>Definition:</h3>
-    <p>
-      JDM stands for the "Japanese Domestic Market" and practically applies to
-      all kinds of imported goods sold from Japan. In this case, we'll be
-      applying the definition to cars only.
-    </p>
-    <h3>Culture:</h3>
-    <p>Many car enthusiasts target their interests into Japanese cars only,
-      because of they can be easily modified for speed, looks, or practicality.
-      The fandom of JDM cars has heavily increased recently with the
-      romanticism of the lifestyle surrounding vintage JDM cars.
-    </p>
-    <h3>Racing:</h3>
-    <p>The majority of these cars have a heritage in racing and were built
-      for speed. Plenty of these enthusaists specifically choose JDM cars for
-      a simple platform to build off of, and for the <strong>strength of their engines.</strong>
-    </p>
-  </body>
+    <head>
+        <title>Sample page full of HTML code for BIMD 233</title>
+    </head>
+    <body>
+        <!-- Navigation Bar -->
+        <a href="index.html">Syllabus+Info</a> | <a href="assignments.html">Assignments</a> | <a href="resources.html">Resources</a> | <xa href="samplehtml.html">Sample HTML Page</a> | <a href="samplecss.html">Sample CSS Page</a> | <a href="samplebootstrap.html">Sample Bootstrap Page</a> | <a href="samplejs.html">Sample JS Page</a>
+        <!-- End Navigation Bar -->
+
+        <h1>Sample HTML Page</h1>
+        
+        <p>The main purpose of this page is to just give you examples of how different tags work in HTML. In this doc are all the basic tags you'd need to learn as a beginner (and for the course BIMD 233). This page only has HTML in it. No CSS or Javascript, yet.</p>
+
+        <h1>Heading 1 (&lt;h1&gt;): The main title for the page, usually.</h1>
+
+        <div>I used to duplicate the &lt;title&gt;, which is found in the &lt;head&gt; section of the document, a lot since, on the user side, the only time they see whatever was specified in &lt;title&gt; is in the tab label in their browser.</div>
+
+        <h2>Heading 2: Use headings to denote importance and sections</h2>
+
+        <h3>Heading 3: They're hierarchical</h3>
+
+        <p>Headings are treated very similarly to how they're treated in Google Docs. Like... really, very, exactly similarly... :P</p>
+
+        <hr>
+
+        <p>Here's a paragraph. &lt;p&gt; tags include space above and below the text element.</p>
+
+        <div>&lt;div&gt; tags are sort of like paragraphs, except without extra space above and below. Technically, divs are used to mark a block of text so that you can then apply a style or treatment to the text. (See how there's no space between this block and the next one?)</div>
+
+        <div>It used to be that you'd only use paragraph tags, but they threw in div tags around HTML4 or so...  In some web apps, like Canvas, if you hit enter while composing a message or discussion post, it'd create a new paragraph and treat it with space above and below, but then this totally screws up when you try to copy-paste it into an email... Different apps do it differently, I would guess because the developers decided to treat carriage returns as either creating a new &lt;p&gt; tag or a new &lt;div&gt; tag.</div>
+
+        <p>Paragraph tags denote a particular meaning for the block of text it surrounds, letting people (and your web browser or a web app--aka the semantic web) know what kind of text it's dealing with.</p>
+
+        <p>Within a block of text, if you want to tell the web browser that a specific section of text should be treated differently, like say you want to style it a particular way, you can use <span>the &lt;span&gt; tag</span>.</p>
+
+        <p>Let's say you need to throw in a line-break, but content-wise the next line is still considered part of the previous stuff in the same &lt;div&gt; or &lt;p&gt; block.<br>
+        You could use the &lt;br&gt; tag to do that.</p>
+    
+        <p>There's also a way to mark off a new section using the &lt;hr&gt; tag. It used to just add a horizontal rule (which is why it's called hr), but now it plays a content mark instead of a stylistic mark. You could then use CSS to tell the document how to render the &lt;hr&gt; tag. Without that style specified, though, it still just renders as a horizontal rule:</p>
+    
+        <hr>
+    
+        <p>^ See the horizonal rule? Anyway, continuing on...</p>
+
+        <p>Below is an unordered list that shows off how to mark specific words or phrases for emphasis or highlighting in a document. Technically, you could use &lt;span&gt; for all of the different styles you want to apply, but this is a quick way to marking different text as different categories of content.</p>
+
+        <ul>
+            <li><strong>&lt;strong&gt; lets you mark text as important (usually bolded).</strong></li>
+            <li><em>&lt;em&gt; lets you mark text that needs emphasis (usually italicized).</em></li>
+            <li>You could do the same as the above with <b>&lt;b&gt; bold</b> and <i>&lt;i&gt; italics</i> tags, but those are discouraged now since they mark particular styles.</li>
+            <li>It'll make more sense why when we get into CSS.</li>
+            <li>There's a bunch of more ways to markup text (just consult one of the references). Bolding and italicizing are the main ones people find they need to use.</li>
+        </ul>
+       
+        <p>By the way, you can also make an ordered list (as in, the bullets are replaced by numbers):</p>
+
+        <ol>
+            <li>Other text markup that might be handy include <sub>&lt;sub&gt;</sub></li>
+            <li>and <sup>&lt;sup&gt;</sup>.</li>
+        </ol>
+
+        <dl>
+            <dt>There's also definition lists.</dt>
+            <dd>(using &lt;dl&gt;, &lt;dt&gt; and &lt;dd&gt; tags)</dd>
+            <dd>Honestly, I've never seen anyone actually use them...</dd>
+            <dd>I suppose it'd be handy if you're making a reference sort of page or something.</dd>
+        </dl>
+
+        <p>For quoting someone or something, <blockquote>you could use the &lt;blockquote&gt; tag for a paragraph.</blockquote></p>
+
+        <p>Or use the <q>&lt;q&gt; quote</q> tag for inline quotes.</p>
+        <hr>
+
+        <table border="1" width="500">
+            <tr>
+                <td width="50%">This is a table</td>
+                <td width="50%">Huzzah!</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <p>This table is styled completely with HTML. For example, I set the border width to "1" and I made the two columns equally wide.</p>
+                    <p>Most of the attributes for the table element have been deprecated with HTML5. In fact, most ways of styling text using HTML have been deprecated in favor of stylesheets, but modern browsers tend to be backwards compatible...</p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">Back in the day, you'd use tables to slice up images and make certain parts of the images clickable or change if you hover your mouse over them or something. This is not how tables are meant to be used, though. HTML should generally be used to mark different parts of the document as different <em>content</em> parts, not stylistic but content-related.</td>
+            </tr>
+        </table>
+
+        <p>Here's some text that uses an &lt;a&gt; anchor tag to link to a site.. um... How about <a href="https://snopes.com">Snopes</a>. That way you can debunk some fake news that permeates <a href="https://facebook.com">Facebook</a>.</p>
+
+        <p>There's a lot to the anchor tag that's used for hyperlinks, like linking to local pages (<a href="index.html">index.html</a>) vs linking to an outside website (<a href="https://markdangerchen.net/">markdangerchen.net</a>), so consult the references for proper syntax.</p>
+
+        <p>You can also reference other sorts of resources (URIs) in anchor tags, not just hyperlinks (URLs). For example, you could reference an email address (<a href="mailto:markchen@uw.edu">markchen@uw.edu</a>).</p>
+
+        <p>And here's an image:</p>
+
+        <img src="media/cat dragon.jpg" width="500" alt="an image of a cat sitting on a partially collapsed awning with the caption How to spot a dragon using an illusion spell" title="cute kitty!">
+
+        <p>Screen readers for the visually impaired read the alt attribute in an image tag, so it's generally a good idea to fill that in. If the image is purely decoration and not content, you can include a blank or null value (alt="") for your alt attribute, and screen readers will ignore the image. Additionally, when you hover your mouse over an image, it displays the text in the title attribute, so you may want to fill that in as well.</p>
+
+    </body>
 </html>
