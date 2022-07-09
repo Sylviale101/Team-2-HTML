@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <body>
-<head>
+<head><!--Mark's comment: Same issue with the Team2Index.html page: Within the html tag are the head and body tags. Each is a separate section of the document and shouldn't be nested in each other so move the head tag out to before line 3 where you have the body tag. It's possible you're confusing the head tag with the header tag. Headers DO go into bodies and define the top of a page but aren't necessary to use.-->
     <title> Quick guide for a future software developer</title>
     <style>
         img {
@@ -13,7 +13,7 @@
 </head>
 
  <!-- Image information -->
-    <img src="Images/frontend.jpg" alt="Front end" width="400" height="250" title="Front and Back End Computer Science" class="center" />
+    <img src="Images/frontend.jpg" alt="Front end" width="400" height="250" title="Front and Back End Computer Science" class="center" /><!--Mark's comment 7/9: I'm not marking this down since it's CSS, but if you wanted the center class to make the image centered then in the style block in your head section, you should replace img with .center. Right now ALL images will be centered, not just the ones with the center class.-->
 
     <h1 style="text-align:center;"> Computer Science.</h1>
         <p>I will give you short information about career options</p>
@@ -26,7 +26,7 @@
         </p>
 
         <p>
-            <b style="font-size:140%;"> <span style="color:blueviolet"><i>Basic skills needed</i></span> </b>
+            <b style="font-size:140%;"> <span style="color:blueviolet"><i>Basic skills needed</i></span> </b><!--Mark's comment 7/9: Use strong and em instead of b and i. HTML is used to specify categories of text and not what the text should look like. Leave it to the browser to determine that strong should be bold and em should be italicized.-->
         </p>
 
 <!-- Bulleted point list -->
@@ -89,7 +89,7 @@
         table, th, td {
           border:1px solid black;
         }
-    </style>
+    </style><!--Mark's comment 7/9: It's good practice to put all contents of a style block within ONE style block at the top of the page. This works, but it's non-standard and will make it harder for someone to edit your document in the future since they'll be looking for the style within the style block at the top of the page.-->
 
     <!-- Where table start -->
         <table style="width:100%">
