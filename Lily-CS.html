@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-    <head><!--Mark's comment: Same issue with the Team2Index.html page: Within the html tag are the head and body tags. Each is a separate section of the document and shouldn't be nested in each other so move the head tag out to before line 3 where you have the body tag. It's possible you're confusing the head tag with the header tag. Headers DO go into bodies and define the top of a page but aren't necessary to use.-->
+    <head>
         <title> Quick guide for a future software developer</title>
     </head>
 <body>
@@ -10,6 +10,9 @@
             display: block;
             margin-left: auto;
             margin-right: auto;
+        }
+        table, th, td {
+          border:1px solid black;
         }
     </style>
 
@@ -85,13 +88,7 @@
  <!-- Color highlighting text -->
     <h2 style="background-color:rgb(131, 159, 244);">Job Options</h2>
 
-<!--Table information -->
-    <style>
-        table, th, td {
-          border:1px solid black;
-        }
-    </style><!--Mark's comment 7/9: It's good practice to put all contents of a style block within ONE style block at the top of the page. This works, but it's non-standard and will make it harder for someone to edit your document in the future since they'll be looking for the style within the style block at the top of the page.-->
-
+<!--Table information-->
     <!-- Where table start -->
         <table style="width:100%">
           <tr>
