@@ -1,11 +1,13 @@
 <!DOCTYPE HTML>
 <html>
-    <body>
-        <!-- This is the title-->
-        <head><!--Mark's comment: Same issue with the Team2Index.html page: Within the html tag are the head and body tags. Each is a separate section of the document and shouldn't be nested in each other so move the head tag out to before line 3 where you have the body tag. It's possible you're confusing the head tag with the header tag. Headers DO go into bodies and define the top of a page but aren't necessary to use.-->
-            <title> Practice HTML Page </title>
+    
+    <!-- This is the title-->
+    <head><!--Mark's comment: Same issue with the Team2Index.html page: Within the html tag are the head and body tags. Each is a separate section of the document and shouldn't be nested in each other so move the head tag out to before line 3 where you have the body tag. It's possible you're confusing the head tag with the header tag. Headers DO go into bodies and define the top of a page but aren't necessary to use.-->
+        <title> Practice HTML Page </title>
 
-        </head>
+    </head>
+
+    <body>
 
         <h1> This Is A Heading </h1>
             <p> This is a paragraph. </p>
@@ -41,7 +43,7 @@
             <hr>
 
             <img src="https://cdnb.artstation.com/p/assets/images/images/004/811/399/large/jeremy-fenske-link-foresttemple.jpg?1486453970" alt="Link and the Forest Temple" title="Link and the Temple Forest by Jeremy Fenske">
-            <p> Image is by Jeremy Fenske. Link to his art: <a href= "https://www.artstation.com/artwork/nLY0K">here.</a></p><!--Mark's comment 7/9: This is a general nitpick since you didn't do anything technically wrong, but the ideal is to have text that is descriptive be the link. That way, when a screen reader tells someone the words in a link, it's more useful than "here." Recommendation is to make the anchor tag <a> encapsulate the whole sentence, though, even then it's not ideal since that sentence, taken out of context, doesn't let the user know who you mean by "his".-->
+            <p> Image is by Jeremy Fenske. <a href= "https://www.artstation.com/artwork/nLY0K"> Here is a link to Fenske's artwork. </a></p><!--Mark's comment 7/9: This is a general nitpick since you didn't do anything technically wrong, but the ideal is to have text that is descriptive be the link. That way, when a screen reader tells someone the words in a link, it's more useful than "here." Recommendation is to make the anchor tag <a> encapsulate the whole sentence, though, even then it's not ideal since that sentence, taken out of context, doesn't let the user know who you mean by "his".-->
 
     
     </body>
