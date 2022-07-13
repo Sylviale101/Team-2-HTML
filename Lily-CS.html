@@ -1,9 +1,24 @@
 <!DOCTYPE html>
 <html>
-    <body>
-<head>
-    <title> Quick guide for a future software developer</title>
-</head>
+    <head>
+        <title> Quick guide for a future software developer</title>
+    </head>
+<body>
+
+    <style>
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        table, th, td {
+          border:1px solid black;
+        }
+    </style>
+
+ <!-- Image information -->
+    <img src="Images/frontend.jpg" alt="Front end" width="400" height="250" title="Front and Back End Computer Science" class="center" /><!--Mark's comment 7/9: I'm not marking this down since it's CSS, but if you wanted the center class to make the image centered then in the style block in your head section, you should replace img with .center. Right now ALL images will be centered, not just the ones with the center class.-->
+
     <h1 style="text-align:center;"> Computer Science.</h1>
         <p>I will give you short information about career options</p>
     <h2 style="background-color: powderblue;">Front End Development.</h2>
@@ -15,8 +30,10 @@
         </p>
 
         <p>
-            <b style="font-size:140%;"> <span style="color:blueviolet"><i>Basic skills needed</i></span> </b>
-         </p>
+            <b style="font-size:140%;"> <span style="color:blueviolet"><i>Basic skills needed</i></span> </b><!--Mark's comment 7/9: Use strong and em instead of b and i. HTML is used to specify categories of text and not what the text should look like. Leave it to the browser to determine that strong should be bold and em should be italicized.-->
+        </p>
+
+<!-- Bulleted point list -->
                  <ul>
                      <li>
                          <b>
@@ -45,7 +62,9 @@
         </p>
         <p>
             <b style="font-size:140%;"> <span style="color:blueviolet"><i>Basic skills needed</i></span> </b>
-         </p>
+        </p>
+
+<!-- Bulleted point list -->
                  <ul>
                      <li>
                          <b>
@@ -65,8 +84,58 @@
                          <b><i>API's</i></b><br>
                      </li>
                  </ul>
-    <h2 style="background-color:rgb(131, 159, 244);">Job Options.</h2>
 
+ <!-- Color highlighting text -->
+    <h2 style="background-color:rgb(131, 159, 244);">Job Options</h2>
 
+<!--Table information-->
+    <!-- Where table start -->
+        <table style="width:100%">
+          <tr>
+            <th>Company Name</th>
+            <th>Potential Salary</th>
+          </tr>
+          <tr>
+            <td><em>Microsoft</em></td>
+            <td>$85,300.00</td>
+          </tr>
+          <tr>
+            <td><em>Oracle</em></td>
+            <td>$90,567.00</td>
+          </tr>
+          <tr>
+            <td><em>Netflix</em></td>
+            <td>$90,435.00</td>
+          </tr>
+        </table>
+    <h4>Note:</h4>
+        <p>Networking is the best strategy for job hunt</p><br>
+    <h3>To expand your network do the following:</h3>
+
+<!-- Numbered list -->
+    <ol>
+        <!-- 1st element in the list -->
+        <li>
+            <b>
+                <i>Create a LinkedIn account</i>
+            </b>
+        </li>
+        <!-- 2nd element in the list -->
+        <li>
+            <b>
+                <i>Find any friends or classmates and send request on LinkedIn</i>
+            </b>
+        </li>
+        <!-- 3rd element in the list -->
+        <li>
+            <b>
+                <i>If you are in school sign up for internship</i>
+            </b>
+        </li>
+    </ol>
+    <h4>Note: For more information visit</h4>
+
+<!-- Link to a website -->
+    <a href=https://medium.datadriveninvestor.com/a-back-end-view-of-front-end-web-design-fb89a0a220ae><em>Front End and Back End Development</em></a>
     </body>
 </html>
