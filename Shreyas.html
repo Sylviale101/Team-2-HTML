@@ -1,104 +1,82 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Sample page full of HTML code for BIMD 233</title>
+        <title>Shrey's First HTML</title>
     </head>
     <body>
-        <!-- Navigation Bar -->
-        <a href="index.html">Syllabus+Info</a> | <a href="assignments.html">Assignments</a> | <a href="resources.html">Resources</a> | <xa href="samplehtml.html">Sample HTML Page</a> | <a href="samplecss.html">Sample CSS Page</a> | <a href="samplebootstrap.html">Sample Bootstrap Page</a> | <a href="samplejs.html">Sample JS Page</a>
-        <!-- End Navigation Bar -->
+    
 
-        <h1>I WILL BE CHANGING THIS</h1>
+        <h1>Hello my name is Shreyas</h1>
         
-        <p>The main purpose of this page is to just give you examples of how different tags work in HTML. In this doc are all the basic tags you'd need to learn as a beginner (and for the course BIMD 233). This page only has HTML in it. No CSS or Javascript, yet.</p>
+        <p>The main purpose of this page is to show my practice with HTML.</p>
 
-        <h1>I know I'm behind (&lt;h1&gt;): Don't worry I'll get caught up.</h1>
+        <h1>Headings are fun: This colon is big and bold</h1>
 
-        <div>I used to duplicate the &lt;title&gt;, which is found in the &lt;head&gt; section of the document, a lot since, on the user side, the only time they see whatever was specified in &lt;title&gt; is in the tab label in their browser.</div>
+        <div>I'm just trying to use the sample HTML and then go in and add my own stuff to help me learn how stuff works.</h2>
+<!--This has all been updated since you last looked at my work-->
+        <h3>Smaller heading: Nice for smaller topics</h3>
 
-        <h2>Heading 2: Use headings to denote importance and sections</h2>
-
-        <h3>Heading 3: They're hierarchical</h3>
-
-        <p>Headings are treated very similarly to how they're treated in Google Docs. Like... really, very, exactly similarly... :P</p>
+        <p>For any chunks of text "p" allows me to do that.</p>
 
         <hr>
+        <h4>More learning..</h4>
+        <p>As you can tell I am very new to this kind of work, and I usually prefer video tutorials so I don't miss steps, but this is a fun way to learn also.
+        <div>This "div" helps me break up my chunks of text.</div>
+        <p>Let's see if I can break up this text inside again..</p>
 
-        <p>Here's a paragraph. &lt;p&gt; tags include space above and below the text element.</p>
-
-        <div>&lt;div&gt; tags are sort of like paragraphs, except without extra space above and below. Technically, divs are used to mark a block of text so that you can then apply a style or treatment to the text. (See how there's no space between this block and the next one?)</div>
-
-        <div>It used to be that you'd only use paragraph tags, but they threw in div tags around HTML4 or so...  In some web apps, like Canvas, if you hit enter while composing a message or discussion post, it'd create a new paragraph and treat it with space above and below, but then this totally screws up when you try to copy-paste it into an email... Different apps do it differently, I would guess because the developers decided to treat carriage returns as either creating a new &lt;p&gt; tag or a new &lt;div&gt; tag.</div>
-
-        <p>Paragraph tags denote a particular meaning for the block of text it surrounds, letting people (and your web browser or a web app--aka the semantic web) know what kind of text it's dealing with.</p>
-
-        <p>Within a block of text, if you want to tell the web browser that a specific section of text should be treated differently, like say you want to style it a particular way, you can use <span>the &lt;span&gt; tag</span>.</p>
-
-        <p>Let's say you need to throw in a line-break, but content-wise the next line is still considered part of the previous stuff in the same &lt;div&gt; or &lt;p&gt; block.<br>
-        You could use the &lt;br&gt; tag to do that.</p>
-    
-        <p>There's also a way to mark off a new section using the &lt;hr&gt; tag. It used to just add a horizontal rule (which is why it's called hr), but now it plays a content mark instead of a stylistic mark. You could then use CSS to tell the document how to render the &lt;hr&gt; tag. Without that style specified, though, it still just renders as a horizontal rule:</p>
+        <div>I did it!</div>
+        <p>Cool moving on..</p>
     
         <hr>
     
-        <p>^ See the horizonal rule? Anyway, continuing on...</p>
+        <p>^ These page breaks above are fun to use</p>
 
-        <p>Below is an unordered list that shows off how to mark specific words or phrases for emphasis or highlighting in a document. Technically, you could use &lt;span&gt; for all of the different styles you want to apply, but this is a quick way to marking different text as different categories of content.</p>
+        <p>Below I am practicing making a list in HTML</p>
 
         <ul>
-            <li><strong>&lt;strong&gt; lets you mark text as important (usually bolded).</strong></li>
-            <li><em>&lt;em&gt; lets you mark text that needs emphasis (usually italicized).</em></li>
-            <li>You could do the same as the above with <b>&lt;b&gt; bold</b> and <i>&lt;i&gt; italics</i> tags, but those are discouraged now since they mark particular styles.</li>
-            <li>It'll make more sense why when we get into CSS.</li>
-            <li>There's a bunch of more ways to markup text (just consult one of the references). Bolding and italicizing are the main ones people find they need to use.</li>
+            <li>"ul" let's me declare a list style so I can do this...</li>
+            <li><strong>This let's me make a list and bold certain words</strong></li>
+            <li><em>This let's me italicize text.</em></li>
+            <li>Now it's time to try using "ol"</li>
+            <ol>"ol" centers/ indents my text..this is cool</ol>
+            <li>Starting to get the hang of things</li>
         </ul>
-       
-        <p>By the way, you can also make an ordered list (as in, the bullets are replaced by numbers):</p>
+       <hr>
+        <p><strong>Now I am learning anchor and href</strong></p>
+        <p>"a" is used to put a link in text to somewhere else.</p>
+        <p>For practicing this I linked <a href="https://oreo.com">Oreo's</a></p>
 
-        <ol>
-            <li>Other text markup that might be handy include <sub>&lt;sub&gt;</sub></li>
-            <li>and <sup>&lt;sup&gt;</sup>.</li>
-        </ol>
-
-        <dl>
-            <dt>There's also definition lists.</dt>
-            <dd>(using &lt;dl&gt;, &lt;dt&gt; and &lt;dd&gt; tags)</dd>
-            <dd>Honestly, I've never seen anyone actually use them...</dd>
-            <dd>I suppose it'd be handy if you're making a reference sort of page or something.</dd>
-        </dl>
-
-        <p>For quoting someone or something, <blockquote>you could use the &lt;blockquote&gt; tag for a paragraph.</blockquote></p>
-
-        <p>Or use the <q>&lt;q&gt; quote</q> tag for inline quotes.</p>
+        <p>I could also link my email and other things with this tool (<a href="mailto:shrey321@uw.edu">shrey321@uw.edu</a>).</p>
         <hr>
-
-        <table border="1" width="500">
+        <h4>How to make a table:</h4>
+        <table border="5" width="425">
             <tr>
-                <td width="50%">This is a table</td>
-                <td width="50%">Huzzah!</td>
+                <td width="10%">Column header 1</td>
+                <td width="10%">Column header 2</td>
             </tr>
             <tr>
                 <td colspan="2">
-                    <p>This table is styled completely with HTML. For example, I set the border width to "1" and I made the two columns equally wide.</p>
-                    <p>Most of the attributes for the table element have been deprecated with HTML5. In fact, most ways of styling text using HTML have been deprecated in favor of stylesheets, but modern browsers tend to be backwards compatible...</p>
+                    <p>I made the boarder width "5" for fun.</p>
                 </td>
             </tr>
             <tr>
-                <td colspan="2">Back in the day, you'd use tables to slice up images and make certain parts of the images clickable or change if you hover your mouse over them or something. This is not how tables are meant to be used, though. HTML should generally be used to mark different parts of the document as different <em>content</em> parts, not stylistic but content-related.</td>
+                <td colspan="2">The more "tr" and "td" I add the more rows and breaks I make</td>
             </tr>
         </table>
+<hr>
+<p><strong>How to do images:</strong></p>
+       
 
-        <p>Here's some text that uses an &lt;a&gt; anchor tag to link to a site.. um... How about <a href="https://snopes.com">Snopes</a>. That way you can debunk some fake news that permeates <a href="https://facebook.com">Facebook</a>.</p>
 
-        <p>There's a lot to the anchor tag that's used for hyperlinks, like linking to local pages (<a href="index.html">index.html</a>) vs linking to an outside website (<a href="https://markdangerchen.net/">markdangerchen.net</a>), so consult the references for proper syntax.</p>
+<img src="media/https://content.fortune.com/wp-content/uploads/2015/04/140864679.jpg" width="500" alt="An image of an Oreo" title="Oreo">
+<p> ^I think I might need help on this step above because no image shows</p>
 
-        <p>You can also reference other sorts of resources (URIs) in anchor tags, not just hyperlinks (URLs). For example, you could reference an email address (<a href="mailto:markchen@uw.edu">markchen@uw.edu</a>).</p>
 
-        <p>And here's an image:</p>
+   
 
-        <img src="media/cat dragon.jpg" width="500" alt="an image of a cat sitting on a partially collapsed awning with the caption How to spot a dragon using an illusion spell" title="cute kitty!">
+        
 
-        <p>Screen readers for the visually impaired read the alt attribute in an image tag, so it's generally a good idea to fill that in. If the image is purely decoration and not content, you can include a blank or null value (alt="") for your alt attribute, and screen readers will ignore the image. Additionally, when you hover your mouse over an image, it displays the text in the title attribute, so you may want to fill that in as well.</p>
+        
 
     </body>
 </html>
